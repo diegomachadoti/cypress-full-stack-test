@@ -1,0 +1,15 @@
+{
+  "name": "cypress-full-stack-test",
+  "version": "1.0.0",
+  "description": "Projeto utilizando o Cypress com node e JS para realizar teste web e mobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.12.0"
+  }
+}
