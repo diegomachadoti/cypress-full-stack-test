@@ -54,8 +54,8 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 - Criar arquivo cypress.json  e adicione as seguintes configurações para definem a resolução da janela do navegador durante os testes
     ```
     {
-    "viewportWidth": 1280,
-    "viewportHeight": 720
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
     }
     ```
 
@@ -76,13 +76,13 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 *Comando para ver detelhes de uma biblioteca que procurar outros pacotes não encontrados em uma instação*
 > npm fund
 
-### App Web Utilizada para teste
-https://front.serverest.dev
-
+### App's Utilizada para teste
+* [Tests Web](https://front.serverest.dev)
+* [Tests API](https://serverest.dev/)
 
 ### Referências
-[Cypress Docs](https://docs.cypress.io/)
-[Cypress Commands](https://docs.cypress.io/api/commands)
-[Cypress Configurações](https://on.cypress.io/configuration)
-[IA](https://chat.openai.com/)
-[Faker](https://github.com/Marak/Faker.js)
+* [Cypress Docs](https://docs.cypress.io/)
+* [Cypress Commands](https://docs.cypress.io/api/commands)
+* [Cypress Configurações](https://on.cypress.io/configuration)
+* [IA](https://chat.openai.com/)
+* [Faker](https://github.com/Marak/Faker.js)
