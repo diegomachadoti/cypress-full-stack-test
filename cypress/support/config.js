@@ -1,4 +1,6 @@
+// Configuração Blobais de URLs
 // cypress/support/config.js
+
 Cypress.config({
     baseUrl: 'https://front.serverest.dev',
     env: {

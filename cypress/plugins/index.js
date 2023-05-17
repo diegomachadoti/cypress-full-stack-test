@@ -1,3 +1,5 @@
+// COnfigurações dos Report
+
 const { initPlugin } = require('mochawesome/src/init');
 
 module.exports = (on, config) => {

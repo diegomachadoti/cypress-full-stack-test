@@ -11,8 +11,13 @@ describe('Login', () => {
 
     it('Realizar login em dispositivo móvel', () => {
       cy.visit(baseUrl) 
+
+      const browsers = Cypress.env('browsers');
   
-      // Insira os comandos para alternar para a visualização móvel
+      browsers.forEach((browser) => {
+        cy.log(`Running test in ${browser}`);
+  
+        // Insira os comandos para alternar para a visualização móvel
       cy.viewport('iphone-xr')
   
       // Insira os comandos para preencher os campos de login e senha e clicar no botão de login
@@ -21,7 +26,11 @@ describe('Login', () => {
       cy.getBotaoEntrar().click()
   
       // Verifica se o login foi bem-sucedido
-      cy.contains('Bem Vindo');
-    })
+      cy.contains('Bem Vindo ' + data.name);
+    });
+
+
   })
+
+})
   
