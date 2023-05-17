@@ -1,0 +1,1 @@
+import 'mochawesome/register';

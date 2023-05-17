@@ -1,17 +1,17 @@
-// ***********************************************************
-// This example support/e2e.js is processed and
-// loaded automatically before your test files.
+// ************************************************** **********
+// Este exemplo support/e2e.js é processado e
+// carregado automaticamente antes de seus arquivos de teste.
 //
-// This is a great place to put global configuration and
-// behavior that modifies Cypress.
+// Este é um ótimo lugar para colocar a configuração global e
+// comportamento que modifica o Cypress.
 //
-// You can change the location of this file or turn off
-// automatically serving support files with the
-// 'supportFile' configuration option.
+// Você pode alterar a localização deste arquivo ou desativar
+// servindo automaticamente arquivos de suporte com o
+// opção de configuração 'supportFile'.
 //
-// You can read more here:
+// Você pode ler mais aqui:
 // https://on.cypress.io/configuration
-// ***********************************************************
+// ************************************************ ***********
 
 // Import commands.js using ES2015 syntax:
 import './commands'
