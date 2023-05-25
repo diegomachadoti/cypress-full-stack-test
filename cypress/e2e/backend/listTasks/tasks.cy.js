@@ -139,7 +139,7 @@ it(`Tentativa de consulta de tarefa não existente com method GET`, () => {
     });
 });
 
-it(`Tentativa de atualizar de tarefa não existente com method GET`, () => {
+it(`Tentativa de atualizar de tarefa não existente com method PUT`, () => {
     const taskRandom = faker.random.number(300, 400);
     cy.request({
         url: `${baseUrl}/tasks/${taskRandom}`,
@@ -158,7 +158,7 @@ it(`Tentativa de atualizar de tarefa não existente com method GET`, () => {
     });
 });
 
-it(`Tentativa de atualizar de tarefa com titulo já existente com method GET`, () => {
+it(`Tentativa de atualizar de tarefa com titulo já existente com method PUT`, () => {
     cy.request({
         url: `${baseUrl}/tasks/1`,
         method: "PUT",
@@ -176,7 +176,7 @@ it(`Tentativa de atualizar de tarefa com titulo já existente com method GET`, (
     });
 });
 
-it(`Tentativa de atualizar de tarefa sem passar campos obrigatórios com method GET`, () => {
+it(`Tentativa de atualizar de tarefa sem passar campos obrigatórios com method PUT`, () => {
     console.log("Sem passar Titulo");
     cy.request({
         url: `${baseUrl}/tasks/1`,
@@ -210,7 +210,7 @@ it(`Tentativa de atualizar de tarefa sem passar campos obrigatórios com method 
     });
 });
 
-it(`Tentativa de exclusão de tarefa não existente com method GET`, () => {
+it(`Tentativa de exclusão de tarefa não existente com method DELETE`, () => {
     const taskRandom = faker.random.number(300, 400) * 10;
     cy.request({
         url: `${baseUrl}/tasks/${taskRandom}`,
