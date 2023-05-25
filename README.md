@@ -1,11 +1,12 @@
-# cypress-full-stack-test
-Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
+# *cypress-full-stack-test*
+🎯 ***Projeto utilizando o Cypress com node e JS para realizar teste web e mobile e API.***
 
 
-### Pré Requisitos
-- Node.js instalado
+## 🔨 Pré Requisitos
 
-### Estrutura do projeto
+- [**Node**](https://nodejs.org/en/download)
+
+## 📁 Estrutura do projeto
     ```
     - cypress
         - fixtures
@@ -22,7 +23,7 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
     - package.json
     
     ```
-- cypress/: É o diretório raiz do projeto Cypress.
+- **cypress/**: É o diretório raiz do projeto Cypress.
 
 - **fixtures/**: É onde você pode armazenar arquivos de dados ou recursos estáticos a serem usados nos testes.
 
@@ -36,7 +37,7 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 
 - **package.json**: É o arquivo de manifesto do projeto Node.js, onde você define as dependências do projeto e scripts de execução do Cypress.
 
-### Comandos
+## ⚙ Comandos
 
 *Instalar o node*
 > npm install
@@ -53,16 +54,7 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 *Estrutura do projeto (Obrigatório para desenvolvimento)*
 > npx cypress open
 
-*Configuração do ambiente*
-- Criar arquivo **cypress.json** e adicione as seguintes configurações para definem a resolução da janela do navegador durante os testes
-    ```
-    {
-    "viewportWidth": 1920,
-    "viewportHeight": 1080
-    }
-    ```
-
-*Instalar a biblioteca Facker para utilizar nos testes*
+*Instalar a biblioteca Faker para utilizar nos testes*
 > npm install faker --save-dev
 
 *Instalar a biblioteca Random para utilizar nos testes*
@@ -88,12 +80,12 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 > npx cypress run --spec "cypress/e2e/backend/listTasks/tasks.cy.js"
 
 
-### App's Utilizada para teste
+## 💻 App's Utilizada para teste
 * [Tests Web Serverest](https://front.serverest.dev)
 * [Tests API Serverest](https://serverest.dev/)
 * [Tests API Projeto WebService diegomachadoti](https://github.com/diegomachadoti/api-full-stack-be-fe)
 
-### Referências
+## 🔗 Referências
 * [Cypress Docs](https://docs.cypress.io/)
 * [Cypress Commands](https://docs.cypress.io/api/commands)
 * [Cypress Configurações](https://on.cypress.io/configuration)
@@ -101,8 +93,11 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 * [Faker](https://github.com/Marak/Faker.js)
 * [Plugin Cypress Runner](https://marketplace.visualstudio.com/items?itemName=G-Fidalgo.cypress-runner)
 
----
-#### TODO
+
+## 📚 To-do
 - Corrigir teste do fluxo de login ✔
 - Criar Testes de API baseano no projeto Tasks ✔
 - Criar teste WEB baseano no projeto Tasks
+
+---
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diegomachadoti&hide=javascript,html)](https://github.com/diegomachadoti)
