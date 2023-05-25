@@ -23,5 +23,3 @@ Cypress.Commands.add('getTituloBemVindo', () => {
   Cypress.Commands.add('getPassword', () => {
     return cy.get('#password');
   });
-
-  

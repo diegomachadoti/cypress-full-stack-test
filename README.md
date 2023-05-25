@@ -100,4 +100,4 @@
 - Criar teste WEB baseano no projeto Tasks
 
 ---
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diegomachadoti&hide=javascript,html)](https://github.com/diegomachadoti)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diegomachadoti&hide=javascript,html)](https://github.com/diegomachadoti/cypress-full-stack-test)
