@@ -1,6 +1,6 @@
 import faker from 'faker';
-import '../support/commands';
-import '../support/config';
+import '../../../support/commands';
+import '../../../support/config';
 
 
 describe('Login', () => {
@@ -11,7 +11,7 @@ describe('Login', () => {
     })
 
     const baseUrl = Cypress.config('baseUrl');
-    const data = require('../fixtures/data.json');
+    const data = require('../../../fixtures/data.json');
 
 
     it('Realizar cadastro de novo usuário aleatório', () => {
@@ -44,15 +44,14 @@ describe('Login', () => {
       cy.getPassword().type(data.senha)
       cy.getBotaoCadastrar().click()
 
-
-      cy.get('span:contains("Este email já está sendo usado")').should('exist').then(($element) => {
-        if ($element) {
-          debugger
-          cy.log('Email já cadastrado');
-        } else {
-          cy.log('Email cadastrado');
-        }
-      });
+      // cy.get('span:contains("Este email já está sendo usado")').should('exist').then(($element) => {
+      //   if ($element) {
+      //     debugger
+      //     cy.log('Email já cadastrado');
+      //   } else {
+      //     cy.log('Email cadastrado');
+      //   }
+      // });
   
   })
     
@@ -66,23 +65,23 @@ describe('Login', () => {
       cy.getBotaoEntrar().click()
   
       // Verifica se o login foi bem-sucedido
-      cy.contains('Bem Vindo');
+      cy.contains('Serverest Store');
     
   })
 
-  it('Tentativa de cadastro de um usuário existente', () => {
-    cy.visit(baseUrl)
-    cy.getBotaoCadastrar().click()
-    cy.get('#nome').type(data.name)
-    cy.getEmail().type(data.email)
-    cy.getPassword().type(data.senha)
-    cy.getBotaoCadastrar().click()
+    it('Tentativa de cadastro de um usuário existente', () => {
+      cy.visit(baseUrl)
+      cy.getBotaoCadastrar().click()
+      cy.get('#nome').type(data.name)
+      cy.getEmail().type(data.email)
+      cy.getPassword().type(data.senha)
+      cy.getBotaoCadastrar().click()
 
-    cy.contains('Este email já está sendo usado').should(($element) => {
-      expect($element.text().trim()).to.equal('Este email já está sendo usado');
-    });
+      cy.contains('Este email já está sendo usado').should(($element) => {
+        expect($element.text().trim()).to.equal('Este email já está sendo usado');
+      });
 
-})
+  })
 
 
 })

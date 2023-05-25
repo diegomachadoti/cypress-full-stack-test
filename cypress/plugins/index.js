@@ -1,4 +1,4 @@
-// COnfigurações dos Report
+// Configurações de exportação dos Reports mochawesome e cypress-multi-reporters
 
 const { initPlugin } = require('mochawesome/src/init');
 

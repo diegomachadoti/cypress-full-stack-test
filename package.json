@@ -4,7 +4,8 @@
   "description": "Projeto utilizando o Cypress com node e JS para realizar teste web e mobile",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "cy": "cypress run"
   },
   "keywords": [],
   "author": "",

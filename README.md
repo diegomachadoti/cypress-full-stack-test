@@ -38,7 +38,10 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 
 ### Comandos
 
-*Configuração inicial*
+*Instalar o node*
+> npm install
+
+*Configuração inicial (Obrigatório para desenvolvimento)*
 > mkdir projeto-cypress
 
 > cd projeto-cypress
@@ -47,20 +50,17 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 
 > npm install cypress --save-dev
 
-*Estrutura do projeto*
+*Estrutura do projeto (Obrigatório para desenvolvimento)*
 > npx cypress open
 
 *Configuração do ambiente*
-- Criar arquivo cypress.json  e adicione as seguintes configurações para definem a resolução da janela do navegador durante os testes
+- Criar arquivo **cypress.json** e adicione as seguintes configurações para definem a resolução da janela do navegador durante os testes
     ```
     {
     "viewportWidth": 1920,
     "viewportHeight": 1080
     }
     ```
-
-*Executando os testes*
-> npm test
 
 *Instalar a biblioteca Facker para utilizar nos testes*
 > npm install faker --save-dev
@@ -73,12 +73,25 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 
 > npx cypress run --reporter mochawesome
 
-*Comando para ver detelhes de uma biblioteca que procurar outros pacotes não encontrados em uma instação*
+*Comando para ver detelhes de uma biblioteca que procurar outros pacotes não encontrados em uma instação (Opcional)*
 > npm fund
 
+*Versão do cypress (Opcional)*
+> npx cypress version
+
+*Executando os testes (padrão do cypress)*
+> npm test
+
+*Executando teste específico em background*
+> npx cypress run --spec "cypress/e2e/frontend/login/loginMobile.cy.js"
+
+> npx cypress run --spec "cypress/e2e/backend/listTasks/tasks.cy.js"
+
+
 ### App's Utilizada para teste
-* [Tests Web](https://front.serverest.dev)
-* [Tests API](https://serverest.dev/)
+* [Tests Web Serverest](https://front.serverest.dev)
+* [Tests API Serverest](https://serverest.dev/)
+* [Tests API Projeto WebService diegomachadoti](https://github.com/diegomachadoti/api-full-stack-be-fe)
 
 ### Referências
 * [Cypress Docs](https://docs.cypress.io/)
@@ -86,3 +99,10 @@ Projeto utilizando o Cypress com node e JS para realizar teste web e mobile
 * [Cypress Configurações](https://on.cypress.io/configuration)
 * [IA](https://chat.openai.com/)
 * [Faker](https://github.com/Marak/Faker.js)
+* [Plugin Cypress Runner](https://marketplace.visualstudio.com/items?itemName=G-Fidalgo.cypress-runner)
+
+---
+#### TODO
+- Corrigir teste do fluxo de login ✔
+- Criar Testes de API baseano no projeto Tasks ✔
+- Criar teste WEB baseano no projeto Tasks
