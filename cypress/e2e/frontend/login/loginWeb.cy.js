@@ -5,9 +5,7 @@ import '../../../support/config';
 
 describe('Login', () => {
     beforeEach(() => {
-      cy.viewport(1920, 1080) // Define a visualização como um dispositivo móvel (iPhone 6)
-
-    
+      cy.viewport(1920, 1080) // Define a visualização
     })
 
     const baseUrl = Cypress.config('baseUrl');

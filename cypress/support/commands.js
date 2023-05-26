@@ -4,6 +4,8 @@
 // https://on.cypress.io/configuration
 // ************************************************ ***********
 
+
+// Login
 Cypress.Commands.add('getBotaoEntrar', () => {
     return cy.get('[data-testid="entrar"]');
   });
@@ -22,4 +24,10 @@ Cypress.Commands.add('getTituloBemVindo', () => {
 
   Cypress.Commands.add('getPassword', () => {
     return cy.get('#password');
+  });
+
+
+  // tarefas
+  Cypress.Commands.add('getHome', () => {
+    return cy.get('#home');
   });
